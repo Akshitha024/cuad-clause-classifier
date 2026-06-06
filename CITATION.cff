@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: clause-x — LoRA fine-tune for CUAD clause classification
+authors:
+  - family-names: Lingampally
+    given-names: Akshitha Reddy
+type: software
+date-released: 2024-09-08
+repository-code: https://github.com/Akshitha024/contract-clause-extractor
+license: MIT
+references:
+  - type: article
+    title: "CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review"
+    authors: [{family-names: Hendrycks, given-names: Dan}]
+    year: 2021
+    url: https://arxiv.org/abs/2103.06268
+  - type: article
+    title: "LoRA: Low-Rank Adaptation of Large Language Models"
+    authors: [{family-names: Hu, given-names: Edward J.}]
+    year: 2022
+    url: https://arxiv.org/abs/2106.09685
+  - type: article
+    title: "LEGAL-BERT: The Muppets straight out of Law School"
+    authors: [{family-names: Chalkidis, given-names: Ilias}]
+    year: 2020
+    url: https://arxiv.org/abs/2010.02559

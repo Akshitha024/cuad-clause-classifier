@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.local
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+
+# big artifacts
+data/raw/
+data/processed/
+checkpoints/
+runs/
+wandb/
+*.pt
+*.safetensors
+
+# notebooks
+.ipynb_checkpoints/
+
+# editor
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# hf cache
+.hf-cache/
