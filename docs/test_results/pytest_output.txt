@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.14, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/mani/Projects/akshitha-portfolio/projects/contract-clause-extractor
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collected 8 items
+
+tests/test_data_prep.py .....                                            [ 62%]
+tests/test_lora_config.py ...                                            [100%]
+
+============================== 8 passed in 0.03s ===============================
