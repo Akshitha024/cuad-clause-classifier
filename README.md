@@ -124,13 +124,13 @@ uv run clause-x plots
 flowchart LR
     A[CUAD-QA HF dataset] -->|data/cuad.build| B[train.jsonl + val.jsonl]
     B --> C[HF Trainer + LoRA]
-    C -->|model/lora.build_model| D[Legal-BERT-small + LoRA q/v]
-    D --> E[checkpoints/lora-adapter]
-    B --> F[eval/per_clause.score]
+    C -->|model/lora.build_model| D["Legal-BERT-small + LoRA q/v"]
+    D --> E["checkpoints/lora-adapter"]
+    B --> F["eval/per_clause.score"]
     E --> F
-    F --> G[results/per_clause.json]
-    G --> H[eval/plots.plot_per_clause]
-    H --> I[results/figures/per_clause_f1.png]
+    F --> G["results/per_clause.json"]
+    G --> H["eval/plots.plot_per_clause"]
+    H --> I["results/figures/per_clause_f1.png"]
 ```
 
 ## Known limitations
