@@ -1,0 +1,330 @@
+[
+  {
+    "clause": "Affiliate License-Licensee",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 0
+  },
+  {
+    "clause": "Affiliate License-Licensor",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 0
+  },
+  {
+    "clause": "Agreement Date",
+    "n": 16,
+    "precision": 1.0,
+    "recall": 0.5833333333333334,
+    "f1": 0.7368421052631579,
+    "support_positive": 12
+  },
+  {
+    "clause": "Anti-Assignment",
+    "n": 17,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 15
+  },
+  {
+    "clause": "Audit Rights",
+    "n": 24,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 18
+  },
+  {
+    "clause": "Cap On Liability",
+    "n": 22,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 16
+  },
+  {
+    "clause": "Change Of Control",
+    "n": 19,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 11
+  },
+  {
+    "clause": "Competitive Restriction Exception",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 2
+  },
+  {
+    "clause": "Covenant Not To Sue",
+    "n": 17,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 9
+  },
+  {
+    "clause": "Document Name",
+    "n": 16,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "support_positive": 16
+  },
+  {
+    "clause": "Effective Date",
+    "n": 16,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "support_positive": 12
+  },
+  {
+    "clause": "Exclusivity",
+    "n": 20,
+    "precision": 0.5,
+    "recall": 0.2,
+    "f1": 0.2857142857142857,
+    "support_positive": 10
+  },
+  {
+    "clause": "Expiration Date",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 12
+  },
+  {
+    "clause": "Governing Law",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 14
+  },
+  {
+    "clause": "Insurance",
+    "n": 28,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 20
+  },
+  {
+    "clause": "Ip Ownership Assignment",
+    "n": 20,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 10
+  },
+  {
+    "clause": "Irrevocable Or Perpetual License",
+    "n": 17,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 5
+  },
+  {
+    "clause": "Joint Ip Ownership",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 2
+  },
+  {
+    "clause": "License Grant",
+    "n": 23,
+    "precision": 0.6666666666666666,
+    "recall": 0.10526315789473684,
+    "f1": 0.18181818181818182,
+    "support_positive": 19
+  },
+  {
+    "clause": "Liquidated Damages",
+    "n": 18,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 4
+  },
+  {
+    "clause": "Minimum Commitment",
+    "n": 21,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 13
+  },
+  {
+    "clause": "Most Favored Nation",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 0
+  },
+  {
+    "clause": "No-Solicit Of Customers",
+    "n": 17,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 7
+  },
+  {
+    "clause": "No-Solicit Of Employees",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 6
+  },
+  {
+    "clause": "Non-Compete",
+    "n": 22,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 12
+  },
+  {
+    "clause": "Non-Disparagement",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 0
+  },
+  {
+    "clause": "Non-Transferable License",
+    "n": 19,
+    "precision": 1.0,
+    "recall": 0.1111111111111111,
+    "f1": 0.2,
+    "support_positive": 9
+  },
+  {
+    "clause": "Notice Period To Terminate Renewal",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 2
+  },
+  {
+    "clause": "Parties",
+    "n": 38,
+    "precision": 1.0,
+    "recall": 0.9473684210526315,
+    "f1": 0.972972972972973,
+    "support_positive": 38
+  },
+  {
+    "clause": "Post-Termination Services",
+    "n": 22,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 16
+  },
+  {
+    "clause": "Price Restrictions",
+    "n": 16,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "support_positive": 2
+  },
+  {
+    "clause": "Renewal Term",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 6
+  },
+  {
+    "clause": "Revenue/Profit Sharing",
+    "n": 21,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 13
+  },
+  {
+    "clause": "Rofr/Rofo/Rofn",
+    "n": 22,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 10
+  },
+  {
+    "clause": "Source Code Escrow",
+    "n": 21,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 7
+  },
+  {
+    "clause": "Termination For Convenience",
+    "n": 16,
+    "precision": 1.0,
+    "recall": 0.125,
+    "f1": 0.2222222222222222,
+    "support_positive": 8
+  },
+  {
+    "clause": "Third Party Beneficiary",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 2
+  },
+  {
+    "clause": "Uncapped Liability",
+    "n": 19,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 9
+  },
+  {
+    "clause": "Unlimited/All-You-Can-Eat-License",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 2
+  },
+  {
+    "clause": "Volume Restriction",
+    "n": 16,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 0
+  },
+  {
+    "clause": "Warranty Duration",
+    "n": 25,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support_positive": 15
+  }
+]

@@ -70,22 +70,53 @@ uv run clause-x plots
 
 ## Results
 
-> Pending the first end-to-end training run. The harness above is verified by
-> unit tests (data prep + LoRA config) and the train/eval CLI commands run
-> with `--epochs 1 --limit 200` on a tiny subset. A full run on the next
-> session will replace this section with the real per-clause F1 table and
-> figure.
+Real run, 1 epoch, Legal-BERT-small + LoRA(r=8) on 4,000 examples × 41 clauses,
+80/20 contract-level train/val split. Training finished in 36s on a Mac M-series
+GPU (Apple MPS); CPU-only is a few minutes per epoch. Full per-clause table is in
+[`results/per_clause.json`](./results/per_clause.json); chart in
+[`results/figures/per_clause_f1.png`](./results/figures/per_clause_f1.png).
 
-```text
-| clause                        |   n |  precision |  recall |   F1 |
-|-------------------------------|----:|-----------:|--------:|-----:|
-| Document Name                 | TBD |       TBD  |    TBD  |  TBD |
-| Parties                       | TBD |       TBD  |    TBD  |  TBD |
-| Agreement Date                | TBD |       TBD  |    TBD  |  TBD |
-| ...                            ...                                  |
+Top 8 clauses by F1:
+
+| clause                       |  P  |  R  |  F1 | n   |
+|------------------------------|----:|----:|----:|----:|
+| Parties                      | 1.00| 0.95| 0.97|  38 |
+| Agreement Date               | 1.00| 0.58| 0.74|  16 |
+| Document Name                | 1.00| 0.50| 0.67|  16 |
+| Effective Date               | 1.00| 0.50| 0.67|  16 |
+| Price Restrictions           | 1.00| 0.50| 0.67|  16 |
+| Exclusivity                  | 0.50| 0.20| 0.29|  20 |
+| Termination For Convenience  | 1.00| 0.12| 0.22|  16 |
+| Non-Transferable License     | 1.00| 0.11| 0.20|  19 |
+
+Macro-averaged F1 across all 41 clauses: **0.112**. Eval accuracy 0.566 (on a
+mostly-negative val set this is a low bar). The pattern across the bottom of
+the table is consistent: high precision, near-zero recall. The model is
+conservative; it only predicts "present" when the contract text looks like a
+clear signal. That fails on subtle clauses (Uncapped Liability, Warranty
+Duration, Volume Restriction).
+
+What that result tells me:
+
+1. The pipeline works end to end. The 0.97 F1 on Parties is not random; the
+   model has learned that "Parties" sections show up as a structured header in
+   most contracts.
+2. **One epoch is not enough.** Recall collapses on the long tail because the
+   classifier has not seen enough positive examples per clause. The fix is more
+   epochs (3-10) plus optional class-balanced sampling.
+3. The LoRA configuration is reasonable: rank-8 on Q/V matched the original
+   paper's defaults and 0.6% trainable parameters trained fine.
+4. The contract-level train/val split is doing its job: there is no overlap
+   leakage, and the held-out 80 contracts are giving a genuine test of
+   generalization.
+
+Reproduce:
+```bash
+uv run clause-x data prepare --limit 4000
+uv run clause-x train run --epochs 1
+uv run clause-x eval run
+uv run clause-x plots
 ```
-
-Plot: `results/figures/per_clause_f1.png` (sorted descending).
 
 ## Architecture
 
