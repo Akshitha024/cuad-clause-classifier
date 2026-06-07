@@ -1,0 +1,21 @@
+# Sealing Wax palette for this repo. Re-rendered charts pick this up.
+axes.facecolor: #FAEDCD
+figure.facecolor: #FAEDCD
+axes.edgecolor: #1c1c1c
+axes.labelcolor: #1c1c1c
+axes.titlecolor: #1c1c1c
+axes.titleweight: bold
+xtick.color: #1c1c1c
+ytick.color: #1c1c1c
+grid.color: #E9C46A
+grid.alpha: 0.5
+axes.grid: True
+axes.spines.top: False
+axes.spines.right: False
+axes.prop_cycle: cycler('color', [#7C2929, #BB7E5D, #D4AF37, #3D405B, #6D6875, #588B8B])
+font.family: sans-serif
+font.sans-serif: Helvetica, Arial, DejaVu Sans
+font.size: 10
+figure.titlesize: 14
+figure.titleweight: bold
+image.cmap: YlOrBr
